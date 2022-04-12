@@ -12,7 +12,7 @@ client.on('ready',()=> {
 });
 
 client.on('message', disme=>{
-    if(disme.author.equals("Consti#3398")){
+    if(disme.author.equals("Consti")){
         dis.Channel.send("guardado");
         console.log("guardada");
     }
