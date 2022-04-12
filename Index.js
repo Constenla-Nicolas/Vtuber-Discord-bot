@@ -13,6 +13,9 @@ client.on('ready',()=> {
 
 client.on('message', disme=>{
     disme.channel.send("a");
+    if (disme.content==a) {
+        disme.reply("A");
+    }
     if(disme.author.equals("Consti")){
         disme.channel.send("guardado");
       
