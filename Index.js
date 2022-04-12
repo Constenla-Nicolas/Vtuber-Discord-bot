@@ -13,7 +13,7 @@ client.on('ready',()=> {
 
 client.on('message', disme=>{
     if(disme.author.equals("Consti#3398")){
-        client.user.send("guardado")
+        dis.Channel.send("guardado")
     }
 
 })
