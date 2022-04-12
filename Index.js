@@ -1,10 +1,19 @@
 const dis = require('discord.js');
 
 const client = new dis.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] })
-//client.login("ODIxODgxNDg0MjgwNzI1NTE1.YFKKxw.obXbg4jgj2RCFtvrVboi4ZDmiLw");
+ 
 client.login(process.env.DISCORD_TOKEN);
+
+
+
 client.on('ready',()=> {
     console.log(`bot ready como ${client.user.tag}`);
 
 });
 
+client.on('message', disme=>{
+    if(disme.author.equals("Consti#3398")){
+        client.user.send("guardado")
+    }
+
+})
