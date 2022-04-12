@@ -12,9 +12,10 @@ client.on('ready',()=> {
 });
 
 client.on('message', disme=>{
+    disme.channel.send("a");
     if(disme.author.equals("Consti")){
-        dis.Channel.send("guardado");
-        console.log("guardada");
+        disme.channel.send("guardado");
+      
     }
 
 });
